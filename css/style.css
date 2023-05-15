@@ -80,6 +80,31 @@ h2{
     font-weight: 700;
     color: #1B4965;
     margin-top: 1.2em;
+    text-align: center;
+}
+
+.video-options{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(353px,1fr));
+    width: 100%;
+    gap: 1em;
+    max-width: 997px;
+    margin-top: 1em;
+}
+
+.movie-element{
+    background-color: deepPink;
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.videos-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 2em;
 }
 
 @media screen and (min-width:673px) {
@@ -89,12 +114,17 @@ h2{
     }
 
     .selection{
-        padding: 1.45em 4em;
+        padding: 1.45em 3.2em;
         position: relative;
         right: -1.3em;
     }
     .options{
         margin-bottom: 0em;
+    }
+
+    .video-options{
+        grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+        padding: 0em;
     }
 }
 
