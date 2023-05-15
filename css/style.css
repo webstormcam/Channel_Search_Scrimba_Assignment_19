@@ -116,6 +116,10 @@ h3{
     line-height: 1.3;
 }
 
+.video-links{
+    text-decoration: none;
+}
+
 @media screen and (min-width:700px) {
     .selection-area{
         flex-direction: row;
@@ -137,7 +141,7 @@ h3{
     }
 }
 
-@media screen and (min-width:653px) and (max-width:1023px) {
+@media screen and (min-width:648px) and (max-width:1023px) {
     .video-thumbnail{
       height: 220px;
     }
