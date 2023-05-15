@@ -1,4 +1,102 @@
 *{
     box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
     font-family: 'Inter', sans-serif;
 }
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+    margin: 1em 0em;
+    font-weight: 700;
+}
+
+.dark-blue{
+    color: #1B4965;
+}
+
+.light-blue{
+    color: #5FA8D3;
+}
+
+.play-logo{
+    margin-right: 0.2em;
+}
+
+.user-input{
+    padding: 1em;
+    border: 3px solid #1B4965;
+    margin-right: 0.5em;
+    width: 75%;
+
+}
+
+
+
+.selection{
+    padding: 1em 4em;
+    border: 3px solid #1B4965;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 93% !important;
+}
+
+.input-area{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 450px;
+}
+
+.selection-area{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+
+button{
+    background-color: #5FA8D3;
+    border: 3px solid #1B4965;
+    padding: 1em;
+}
+
+.options{
+    margin-bottom: 1em;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1B4965;
+    margin-top: 1.2em;
+}
+
+@media screen and (min-width:673px) {
+    .selection-area{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .selection{
+        padding: 1.45em 4em;
+        position: relative;
+        right: -1.3em;
+    }
+    .options{
+        margin-bottom: 0em;
+    }
+}
+
+
+
