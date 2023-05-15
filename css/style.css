@@ -137,5 +137,11 @@ h3{
     }
 }
 
+@media screen and (min-width:653px) and (max-width:1023px) {
+    .video-thumbnail{
+      height: 220px;
+    }
+}
+
 
 
