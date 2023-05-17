@@ -21,5 +21,8 @@ enterButton.addEventListener('click',searchFunction)
 
 
 function searchFunction(){
-    
+    let searchText = userInput.value
+    console.log(searchText)
+    userInput.value=""
+   
 }
