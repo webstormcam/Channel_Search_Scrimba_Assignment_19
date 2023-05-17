@@ -1,6 +1,6 @@
 const userInput = document.getElementById('userInput')
 const enterButton = document.getElementById('enterButton')
-const optionDrop = document.getElementById('options')
+const optionDrop = document.getElementById('youtubeChannels')
 enterButton.addEventListener('click',searchFunction)
 
 
@@ -21,8 +21,9 @@ enterButton.addEventListener('click',searchFunction)
 
 
 function searchFunction(){
-    let searchText = userInput.value
-    console.log(searchText)
+    const searchText = userInput.value
+    const selectedOption = optionDrop.value
+    console.log(searchText,selectedOption)
     userInput.value=""
    
 }
