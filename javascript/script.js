@@ -25,7 +25,8 @@ function searchFunction(){
     fetch(endpoint)
     .then(res=>res.json())
     .then(data=>{
-    console.log(data)
+    console.log(data.items)
+    //work with the length of data items
 })
    
 }
