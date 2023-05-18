@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,11 +14,11 @@
 <body>
     <div class="content">
         <div class="top">
-            <img class="play-logo" src="images/Play icon.png" alt="a play icon">
+            <img class="play-logo" src="./images/Play icon.png" alt="a play icon">
             <h1> <span class="large dark-blue">Channel </span><span class="large light-blue">Search</span></h1>
         </div>
         <div class="selection-area">
-            <div class="options">
+            <div id="options" class="options">
                 <select class="selection" id="youtubeChannels">
                 <option value="UCrTNhL_yO3tPTdQ5XgmmWjA">Red Letter Media</option>
                 <option value="UCGIY_O-8vW4rfX98KlMkvRg">Nintendo</option>
@@ -31,14 +31,14 @@
          </div>
              <div class="input-area">
             <input id="userInput" class="user-input" type="text" placeholder="Search">
-            <button><img src="images/arrow-right-solid 1.png" alt="arrow pointing right"></button>
+            <button id="enterButton"><img src="./images/arrow-right-solid 1.png" alt="arrow pointing right"></button>
             </div>
         </div>
         <div class="videos-area">
             <h2>Videos</h2>
             <div id="videoOptions" class="video-options">
                 
-                <div class="movie-element">
+                <!-- <div class="movie-element">
                     <a class="video-links" target="_blank" href="https://www.google.com/" >
                     <div class="video-image">
                         <img class="video-thumbnail" src="images/Mario thumbnail.png" alt="">
@@ -87,10 +87,10 @@
                     <div class="video-text">
                         <h3>Guradians of the Galaxy: Volume 3 (2023)</h3>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-    <script src="/javascript/script.js"></script>
+    <script src="./javascript/script.js"></script>
 </body>
 </html>
