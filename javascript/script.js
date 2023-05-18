@@ -2,8 +2,6 @@ const userInput = document.getElementById('userInput')
 const enterButton = document.getElementById('enterButton')
 const optionDrop = document.getElementById('youtubeChannels')
 enterButton.addEventListener('click',searchFunction)
-
-
 const apiKey = "AIzaSyDVdXSdZC0Ilhfo5vaJThktHwVhuOqz220"
 // let endpoint = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet,id&&maxResults=6&channelId=UCcoDpbA4c9HQY0AjKHSlKLg&q="anime"&type=video`
 // const channelId = "Replace with channel ID"
