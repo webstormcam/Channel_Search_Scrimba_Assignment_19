@@ -27,9 +27,11 @@ function searchFunction(){
     .then(data=>{
         if(data.items.length === 0){
             let blankText = `<div class="no-videos-container">
-            <p class="no-videos">Sorry there are no videos that match that search, please attempt another search or switch youtube channels and search something else.</p>
+            <p class="no-videos">Sorry there are no videos that match that search, please attempt another search or switch youtube channels.</p>
             </div>`
             videoOptions.style.display="flex"
+            videoOptions.style.alignItems="center"
+            videoOptions.style.justifyContent="center"
             videoOptions.innerHTML = blankText
         } else{
             for(video of data.items){
@@ -44,6 +46,8 @@ function searchFunction(){
                 </a>
                 </div>`
                 videoOptions.style.display="grid"
+                videoOptions.style.alignItems="flex-start"
+                videoOptions.style.justifyContent="flex-start"
             videoOptions.innerHTML += newVideo
             }
         }
