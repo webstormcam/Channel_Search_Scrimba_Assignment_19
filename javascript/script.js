@@ -26,10 +26,10 @@ function searchFunction(){
     .then(res=>res.json())
     .then(data=>{
         if(data.items.length === 0){
-            console.log('hello???')
-            let blankText = `<div>
+            let blankText = `<div class="no-videos-container">
             <p class="no-videos">Sorry there are no videos that match that search, please attempt another search or switch youtube channels and search something else.</p>
             </div>`
+            videoOptions.style.display="flex"
             videoOptions.innerHTML = blankText
         } else{
             for(video of data.items){
@@ -43,6 +43,7 @@ function searchFunction(){
                 </div>
                 </a>
                 </div>`
+                videoOptions.style.display="grid"
             videoOptions.innerHTML += newVideo
             }
         }
