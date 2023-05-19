@@ -25,7 +25,12 @@ function searchFunction(){
         let endpoint = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet,id&&maxResults=6&channelId=${selectedOption}&q="${searchText}"&type=video`
         userInput.value=""
         fetch(endpoint)
-        .then(res=>res.json())
+        .then(res=>{
+            if(!res.ok){
+                throw Error('Youtube API request have been maxed out for the day. Search again in 24 hours!')
+            }
+            return res.json()
+        })
         .then(data=>{
             if(data.items.length === 0){
                 let blankText = `<div class="no-videos-container">
@@ -54,6 +59,15 @@ function searchFunction(){
                 }
             }
             
+    })
+    .catch(err=>{
+        let blankText = `<div class="no-videos-container">
+        <p class="no-videos">${err}</p>
+        </div>`
+        videoOptions.style.display="flex"
+        videoOptions.style.alignItems="center"
+        videoOptions.style.justifyContent="center"
+        videoOptions.innerHTML = blankText
     })
 
     }
